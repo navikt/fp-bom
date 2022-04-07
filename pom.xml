@@ -26,7 +26,7 @@
         <prometheus.version>0.15.0</prometheus.version>
         <micrometer.version>1.8.4</micrometer.version>
 
-        <swagger.version>2.1.13</swagger.version>
+        <swagger.version>2.2.0</swagger.version>
         <swagger-ui.version>4.10.3</swagger-ui.version>
 
         <slf4j.version>1.7.36</slf4j.version>
