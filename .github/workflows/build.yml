@@ -1,0 +1,34 @@
+name: Bygg og deploy
+
+on:
+  push:
+    branches:
+      - master         # Push events on master branch
+    paths-ignore:
+      - '**.md'
+      - '**.MD'
+      - '.gitignore'
+      - 'LICENCE'
+      - 'CODEOWNERS'
+      - 'dev/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: "0"
+
+      - name: Bygg
+        shell: bash
+        run: |
+          mvn verify -e --batch-mode --settings .github/.m2/settings.xml -DtrimStackTrace=false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Release Drafter
+        uses: release-drafter/release-drafter@v5
+        if: success()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

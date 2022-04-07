@@ -1,0 +1,21 @@
+version: 2
+registries:
+  fp-felles: # Gir tilgang til registre innad i nav med fp-felles som inngang (PATen bestemmer)
+    type: maven-repository
+    url: https://maven.pkg.github.com/navikt/fp-bom
+    username: x-access-token
+    password: ${{ secrets.PAT }}
+
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
+  - package-ecosystem: maven
+    directory: "/"
+    registries:
+      - fp-bom
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 20
