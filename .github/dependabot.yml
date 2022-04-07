@@ -1,6 +1,6 @@
 version: 2
 registries:
-  fp-felles: # Gir tilgang til registre innad i nav med fp-felles som inngang (PATen bestemmer)
+  fp-bom: # Gir tilgang til registre innad i nav med fp-bom som inngang (PATen bestemmer)
     type: maven-repository
     url: https://maven.pkg.github.com/navikt/fp-bom
     username: x-access-token
