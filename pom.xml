@@ -16,6 +16,10 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
+        <!-- Sonar felles -->
+        <sonar.organization>navit</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
         <!-- Felles artefakter -->
         <konfig.version>1.1.5</konfig.version>
 
@@ -42,7 +46,7 @@
         <hikari.version>5.0.1</hikari.version>
         <flyway.version>8.5.5</flyway.version>
         <postgresql.version>42.3.3</postgresql.version>
-        <vault-jdbc.vesion>1.3.9</vault-jdbc.vesion>
+        <vault-jdbc.version>1.3.9</vault-jdbc.version>
 
         <junit.version>5.8.2</junit.version>
         <assertj.version>3.22.0</assertj.version>
@@ -220,6 +224,13 @@
                 <version>1.1.4</version>
             </dependency>
 
+            <!-- Validation -->
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>6.2.2.Final</version>
+            </dependency>
+
             <!-- Hibernate -->
             <dependency>
                 <groupId>org.hibernate</groupId>
@@ -353,22 +364,12 @@
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
                 <artifactId>jcl-over-slf4j</artifactId>
                 <version>${slf4j.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>${logback.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-core</artifactId>
                 <version>${logback.version}</version>
             </dependency>
 
