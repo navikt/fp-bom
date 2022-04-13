@@ -68,6 +68,11 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>no.nav.foreldrepenger.felles</groupId>
+                <artifactId>swagger-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>no.nav.foreldrepenger</groupId>
                 <artifactId>konfig</artifactId>
                 <version>${konfig.version}</version>
