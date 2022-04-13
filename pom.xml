@@ -7,7 +7,7 @@
     <artifactId>fp-bom</artifactId>
     <packaging>pom</packaging>
     <name>Foreldrepenger :: Bill of Materials</name>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.1.0-SNAPSHOT</version>
 
     <properties>
         <java.version>17</java.version>
@@ -62,16 +62,11 @@
     </properties>
 
     <modules>
-        <module>swagger-starter</module>
+        <module>starter-parent-pom</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>no.nav.foreldrepenger.felles</groupId>
-                <artifactId>swagger-starter</artifactId>
-                <version>${project.version}</version>
-            </dependency>
             <dependency>
                 <groupId>no.nav.foreldrepenger</groupId>
                 <artifactId>konfig</artifactId>
