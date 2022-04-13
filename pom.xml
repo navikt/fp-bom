@@ -61,6 +61,10 @@
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
     </properties>
 
+    <modules>
+        <module>swagger-starter</module>
+    </modules>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -384,7 +388,7 @@
                 <version>${logback.version}</version>
             </dependency>
 
-            <!-- Swagger -->
+            <!-- Swagger starter-->
             <dependency>
                 <groupId>io.swagger.core.v3</groupId>
                 <artifactId>swagger-jaxrs2</artifactId>
