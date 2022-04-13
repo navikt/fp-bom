@@ -31,11 +31,7 @@ jobs:
         shell: bash
         run: |
           mvn verify -e -B -s settings.xml -DtrimStackTrace=false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release Drafter
         uses: release-drafter/release-drafter@v5
         if: success()
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

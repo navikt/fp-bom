@@ -25,5 +25,3 @@ jobs:
         run: |
           echo "Verifying"
           mvn verify -e -B -s settings.xml
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
