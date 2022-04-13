@@ -61,8 +61,17 @@
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
     </properties>
 
+    <modules>
+        <module>swagger-starter</module>
+    </modules>
+
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>no.nav.foreldrepenger.felles</groupId>
+                <artifactId>swagger-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <dependency>
                 <groupId>no.nav.foreldrepenger</groupId>
                 <artifactId>konfig</artifactId>
@@ -384,7 +393,7 @@
                 <version>${logback.version}</version>
             </dependency>
 
-            <!-- Swagger -->
+            <!-- Swagger starter-->
             <dependency>
                 <groupId>io.swagger.core.v3</groupId>
                 <artifactId>swagger-jaxrs2</artifactId>

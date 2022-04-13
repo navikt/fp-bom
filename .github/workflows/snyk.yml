@@ -1,15 +1,11 @@
-name: Verifiser pull request
-
+name: Snyk vulnerabilities scanning of dependencies
 on:
-  pull_request:
-    branches:
-      - master
-    paths-ignore:
-      - '**.md'
-      - '**.MD'
+  schedule:
+    - cron:  '0 0 * * 1'
+  workflow_dispatch:
 
 jobs:
-  build:
+  snyk:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -21,9 +17,15 @@ jobs:
           servers: '[{ "id": "github", "username": "${{ github.actor }}", "password": "${{ secrets.READER_TOKEN }}" }]'
           output_file: settings.xml
 
-      - name: Build
-        run: |
-          echo "Verifying"
-          mvn verify -e -B -s settings.xml
+      - name: Run Snyk
+        uses: snyk/actions/maven@master
+        with:
+          command: monitor
+          args: |
+            --org=teamforeldrepenger
+            --all-projects
+            --configuration-attributes=usage:java-runtime
+            --remote-repo-url=https://github.com/${{ github.repository }}.git
+            -- -s settings.xml
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
