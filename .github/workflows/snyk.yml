@@ -27,5 +27,3 @@ jobs:
             --configuration-attributes=usage:java-runtime
             --remote-repo-url=https://github.com/${{ github.repository }}.git
             -- -s settings.xml
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
