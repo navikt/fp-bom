@@ -61,10 +61,6 @@
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
     </properties>
 
-    <modules>
-        <module>starter-parent-pom</module>
-    </modules>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
