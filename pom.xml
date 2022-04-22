@@ -29,6 +29,7 @@
 
         <prometheus.version>0.15.0</prometheus.version>
         <micrometer.version>1.8.5</micrometer.version>
+        <metrics.version>4.2.9</metrics.version>
 
         <swagger.version>2.2.0</swagger.version>
         <swagger-ui.version>4.10.3</swagger-ui.version>
@@ -343,6 +344,27 @@
                 <groupId>io.prometheus</groupId>
                 <artifactId>simpleclient_common</artifactId>
                 <version>${prometheus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.dropwizard.metrics</groupId>
+                <artifactId>metrics-annotation</artifactId>
+                <version>${metrics.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.dropwizard.metrics</groupId>
+                <artifactId>metrics-core</artifactId>
+                <version>${metrics.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.dropwizard.metrics</groupId>
+                <artifactId>metrics-servlets</artifactId>
+                <version>${metrics.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.dropwizard.metrics</groupId>
+                <artifactId>metrics-healthchecks</artifactId>
+                <version>${metrics.version}</version>
             </dependency>
 
             <!-- Micrometer -->
@@ -702,6 +724,12 @@
                     <groupId>org.sonarsource.scanner.maven</groupId>
                     <artifactId>sonar-maven-plugin</artifactId>
                     <version>3.9.1.2184</version>
+                </plugin>
+                <!-- Plugin required to build java classes from XSD using XJC -->
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>jaxb2-maven-plugin</artifactId>
+                    <version>3.1.0</version>
                 </plugin>
             </plugins>
         </pluginManagement>
