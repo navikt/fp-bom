@@ -1,8 +1,8 @@
 version: 2
 registries:
-  fp-bom: # Gir tilgang til registre innad i nav med fp-bom som inngang (PATen bestemmer)
+  fp-felles: # Gir tilgang til registre innad i nav med fp-bom som inngang (PATen bestemmer)
     type: maven-repository
-    url: https://maven.pkg.github.com/navikt/fp-bom
+    url: https://maven.pkg.github.com/navikt/fp-felles
     username: x-access-token
     password: ${{ secrets.PAT }}
 
@@ -15,7 +15,7 @@ updates:
   - package-ecosystem: maven
     directory: "/"
     registries:
-      - fp-bom
+      - fp-felles
     schedule:
       interval: daily
     open-pull-requests-limit: 20
