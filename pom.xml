@@ -60,6 +60,8 @@
 
         <reflections.version>0.10.2</reflections.version>
 
+        <cxf.version>3.5.1</cxf.version>
+
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
     </properties>
 
@@ -481,6 +483,29 @@
             </dependency>
 
             <!-- Diverse enforcer resolutions for -->
+            <!-- commons-codec 1.11 sliter med https://security.snyk.io/vuln/SNYK-JAVA-COMMONSCODEC-561518 -->
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.15</version>
+            </dependency>
+            <!-- bcprov-jdk15on 1.64 sliter med https://security.snyk.io/vuln/SNYK-JAVA-ORGBOUNCYCASTLE-1296075-->
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk15on</artifactId>
+                <version>1.70</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.santuario</groupId>
+                <artifactId>xmlsec</artifactId>
+                <version>2.3.0</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.fasterxml.woodstox</groupId>
+                        <artifactId>woodstox-core</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
             <dependency>
                 <groupId>net.bytebuddy</groupId>
                 <artifactId>byte-buddy</artifactId>
@@ -535,6 +560,160 @@
                 <groupId>org.glassfish</groupId>
                 <artifactId>jakarta.el</artifactId>
                 <version>3.0.4</version>
+            </dependency>
+
+            <dependency>
+                <groupId>jakarta.xml.ws</groupId>
+                <artifactId>jakarta.xml.ws-api</artifactId>
+                <version>2.3.3</version>
+            </dependency>
+
+            <!-- Apache CXF -->
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-core</artifactId>
+                <version>${cxf.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.codehaus.woodstox</groupId>
+                        <artifactId>woodstox-core-asl</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.annotation</groupId>
+                        <artifactId>javax.annotation-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.activation</groupId>
+                        <artifactId>javax.activation-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.xml.soap</groupId>
+                        <artifactId>javax.xml.soap-api</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-transports-http-jetty</artifactId>
+                <version>${cxf.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.codehaus.woodstox</groupId>
+                        <artifactId>woodstox-core-asl</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.annotation</groupId>
+                        <artifactId>javax.annotation-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.activation</groupId>
+                        <artifactId>javax.activation-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.xml.soap</groupId>
+                        <artifactId>javax.xml.soap-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>net.shibboleth.utilities</groupId>
+                        <artifactId>java-support</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-frontend-jaxws</artifactId>
+                <version>${cxf.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.codehaus.woodstox</groupId>
+                        <artifactId>woodstox-core-asl</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.annotation</groupId>
+                        <artifactId>javax.annotation-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.activation</groupId>
+                        <artifactId>javax.activation-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.xml.soap</groupId>
+                        <artifactId>javax.xml.soap-api</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-transports-http</artifactId>
+                <version>${cxf.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.codehaus.woodstox</groupId>
+                        <artifactId>woodstox-core-asl</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.annotation</groupId>
+                        <artifactId>javax.annotation-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.activation</groupId>
+                        <artifactId>javax.activation-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.xml.soap</groupId>
+                        <artifactId>javax.xml.soap-api</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-features-logging</artifactId>
+                <version>${cxf.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.codehaus.woodstox</groupId>
+                        <artifactId>woodstox-core-asl</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.annotation</groupId>
+                        <artifactId>javax.annotation-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.activation</groupId>
+                        <artifactId>javax.activation-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.xml.soap</groupId>
+                        <artifactId>javax.xml.soap-api</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-ws-security</artifactId>
+                <version>${cxf.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.codehaus.woodstox</groupId>
+                        <artifactId>woodstox-core-asl</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.annotation</groupId>
+                        <artifactId>javax.annotation-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.activation</groupId>
+                        <artifactId>javax.activation-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.xml.soap</groupId>
+                        <artifactId>javax.xml.soap-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>net.shibboleth.utilities</groupId>
+                        <artifactId>java-support</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
         </dependencies>
     </dependencyManagement>
