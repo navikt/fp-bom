@@ -568,6 +568,12 @@
                 <version>2.3.3</version>
             </dependency>
 
+            <dependency>
+                <groupId>jakarta.jws</groupId>
+                <artifactId>jakarta.jws-api</artifactId>
+                <version>2.1.0</version>
+            </dependency>
+
             <!-- Apache CXF -->
             <dependency>
                 <groupId>org.apache.cxf</groupId>
