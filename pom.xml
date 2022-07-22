@@ -57,7 +57,7 @@
         <jakarta.activation.version>1.2.2</jakarta.activation.version>
         <jakarta.persistence.version>2.2.3</jakarta.persistence.version>
         <jakarta.enterprise.version>2.0.2</jakarta.enterprise.version>
-        <jakarta.json-api.version>1.1.6</jakarta.json-api.version>
+        <jakarta.json-api.version>2.1.1</jakarta.json-api.version>
 
         <reflections.version>0.10.2</reflections.version>
 
