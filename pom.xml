@@ -57,7 +57,7 @@
         <jakarta.activation.version>1.2.2</jakarta.activation.version>
         <jakarta.persistence.version>2.2.3</jakarta.persistence.version>
         <jakarta.enterprise.version>2.0.2</jakarta.enterprise.version>
-        <jakarta.json-api.version>1.1.6</jakarta.json-api.version>
+
 
         <reflections.version>0.10.2</reflections.version>
 
@@ -237,13 +237,6 @@
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpcore</artifactId>
                 <version>4.4.15</version>
-            </dependency>
-
-            <!-- Java JSON API -->
-            <dependency>
-                <groupId>jakarta.json</groupId>
-                <artifactId>jakarta.json-api</artifactId>
-                <version>${jakarta.json-api.version}</version>
             </dependency>
 
             <!-- Validation -->
