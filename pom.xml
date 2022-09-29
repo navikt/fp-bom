@@ -25,14 +25,14 @@
         <konfig.version>1.1.5</konfig.version>
 
         <!-- Eksterne -->
-        <jetty.version>10.0.11</jetty.version>
+        <jetty.version>10.0.12</jetty.version>
         <no.nav.security.version>2.1.5</no.nav.security.version>
 
         <prometheus.version>0.16.0</prometheus.version>
         <micrometer.version>1.9.4</micrometer.version>
         <metrics.version>4.2.12</metrics.version>
 
-        <swagger.version>2.2.2</swagger.version>
+        <swagger.version>2.2.3</swagger.version>
         <swagger-ui.version>4.14.2</swagger-ui.version>
 
         <slf4j.version>2.0.3</slf4j.version>
@@ -44,13 +44,13 @@
 
         <kafka.version>3.3.0</kafka.version>
 
-        <hibernate.version>5.6.11.Final</hibernate.version>
+        <hibernate.version>5.6.12.Final</hibernate.version>
         <hikari.version>5.0.1</hikari.version>
-        <flyway.version>9.3.0</flyway.version>
+        <flyway.version>9.3.1</flyway.version>
         <postgresql.version>42.5.0</postgresql.version>
         <vault-jdbc.version>1.3.10</vault-jdbc.version>
 
-        <junit.version>5.9.0</junit.version>
+        <junit.version>5.9.1</junit.version>
         <assertj.version>3.23.1</assertj.version>
         <mockito.version>4.8.0</mockito.version>
 
@@ -503,7 +503,7 @@
             <dependency>
                 <groupId>net.bytebuddy</groupId>
                 <artifactId>byte-buddy</artifactId>
-                <version>1.12.16</version>
+                <version>1.12.17</version>
             </dependency>
             <dependency>
                 <groupId>net.minidev</groupId>
@@ -513,7 +513,7 @@
             <dependency>
                 <groupId>com.nimbusds</groupId>
                 <artifactId>nimbus-jose-jwt</artifactId>
-                <version>9.25</version>
+                <version>9.25.4</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.classfilewriter</groupId>
@@ -533,7 +533,7 @@
             <dependency>
                 <groupId>io.swagger</groupId>
                 <artifactId>swagger-compat-spec-parser</artifactId>
-                <version>1.0.61</version>
+                <version>1.0.62</version>
             </dependency>
             <dependency>
                 <groupId>io.javaslang</groupId>
