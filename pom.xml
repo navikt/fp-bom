@@ -40,7 +40,7 @@
         <logstash.version>7.2</logstash.version>
         <logback-syslog4j.version>1.0.0</logback-syslog4j.version>
 
-        <jersey.version>2.35</jersey.version>
+        <jersey.version>2.37</jersey.version>
 
         <kafka.version>3.3.1</kafka.version>
 
