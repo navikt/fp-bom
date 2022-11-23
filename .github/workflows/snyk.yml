@@ -21,7 +21,7 @@ jobs:
         uses: snyk/actions/maven@master
         with:
           command: monitor
-          args: |
+          args: >
             --org=teamforeldrepenger
             --all-projects
             --configuration-attributes=usage:java-runtime
