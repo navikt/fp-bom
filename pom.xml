@@ -30,7 +30,7 @@
 
         <prometheus.version>0.16.0</prometheus.version>
         <micrometer.version>1.10.1</micrometer.version>
-        <metrics.version>4.2.13</metrics.version>
+        <metrics.version>4.2.15</metrics.version>
 
         <swagger.version>2.2.7</swagger.version>
         <swagger-ui.version>4.15.5</swagger-ui.version>
