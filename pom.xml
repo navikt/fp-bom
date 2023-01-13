@@ -25,7 +25,7 @@
         <konfig.version>1.1.5</konfig.version>
 
         <!-- Eksterne -->
-        <jetty.version>10.0.12</jetty.version>
+        <jetty.version>10.0.13</jetty.version>
         <no.nav.security.version>2.1.6</no.nav.security.version>
 
         <prometheus.version>0.16.0</prometheus.version>
@@ -40,7 +40,7 @@
         <logstash.version>7.2</logstash.version>
         <logback-syslog4j.version>1.0.0</logback-syslog4j.version>
 
-        <jersey.version>2.37</jersey.version>
+        <jersey.version>2.38</jersey.version>
 
         <kafka.version>3.3.1</kafka.version>
 
@@ -61,7 +61,7 @@
 
         <reflections.version>0.10.2</reflections.version>
 
-        <cxf.version>3.5.4</cxf.version>
+        <cxf.version>3.5.5</cxf.version>
 
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
     </properties>
