@@ -39,7 +39,7 @@
 
         <jersey.version>2.38</jersey.version>
 
-        <kafka.version>3.3.1</kafka.version>
+        <kafka.version>3.3.2</kafka.version>
 
         <hibernate.version>5.6.14.Final</hibernate.version>
         <hikari.version>5.0.1</hikari.version>
