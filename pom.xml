@@ -756,6 +756,20 @@
         </plugins>
     </build>
 
+    <profiles>
+        <profile>
+            <id>sonar</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.jacoco</groupId>
+                        <artifactId>jacoco-maven-plugin</artifactId>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
     <scm>
         <connection>scm:git:https://github.com/navikt/fp-bom.git</connection>
         <developerConnection>scm:git:https://github.com/navikt/fp-bom.git</developerConnection>
