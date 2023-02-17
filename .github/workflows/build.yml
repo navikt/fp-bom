@@ -1,16 +1,15 @@
-name: Verifiser
+name: Bygg og prepare release
 
 on:
   push:
     branches:
-      - master         # Push events on master branch
+      - '**'
     paths-ignore:
       - '**.md'
       - '**.MD'
       - '.gitignore'
       - 'LICENCE'
       - 'CODEOWNERS'
-      - 'dev/**'
 
 jobs:
   build:
@@ -30,10 +29,11 @@ jobs:
       - name: Bygg
         shell: bash
         run: |
-          mvn verify -e -B -s settings.xml -DtrimStackTrace=false
+          mvn verify -e -B -s settings.xml
 
-      - name: Release Drafter
-        uses: release-drafter/release-drafter@v5
-        if: success()
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  release-drafter:
+    name: Update
+    if: github.ref_name == 'master'
+    needs: build
+    uses: navikt/fp-gha-workflows/.github/workflows/release-drafter.yml@main
+    secrets: inherit
