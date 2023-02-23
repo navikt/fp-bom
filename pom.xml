@@ -37,7 +37,7 @@
         <logstash.version>7.3</logstash.version>
         <logback-syslog4j.version>1.0.0</logback-syslog4j.version>
 
-        <jersey.version>2.38</jersey.version>
+        <jersey.version>2.39</jersey.version>
 
         <kafka.version>3.4.0</kafka.version>
 
@@ -163,30 +163,6 @@
                 <groupId>io.github.kobylynskyi</groupId>
                 <artifactId>graphql-java-codegen</artifactId>
                 <version>5.5.0</version>
-            </dependency>
-
-            <!-- Sikkerhet -->
-            <dependency>
-                <groupId>no.nav.security</groupId>
-                <artifactId>token-client-core</artifactId>
-                <version>${no.nav.security.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.jetbrains.kotlin</groupId>
-                        <artifactId>kotlin-stdlib-jdk8</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>no.nav.security</groupId>
-                <artifactId>token-validation-jaxrs</artifactId>
-                <version>${no.nav.security.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.jetbrains.kotlin</groupId>
-                        <artifactId>kotlin-stdlib-jdk8</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
 
             <!-- Kafka -->
@@ -383,6 +359,7 @@
                 <version>${assertj.version}</version>
             </dependency>
 
+            <!-- Slett når WS utgår -->
             <dependency>
                 <groupId>org.reflections</groupId>
                 <artifactId>reflections</artifactId>
@@ -418,16 +395,7 @@
                 <artifactId>byte-buddy</artifactId>
                 <version>1.14.0</version>
             </dependency>
-            <dependency>
-                <groupId>net.minidev</groupId>
-                <artifactId>json-smart</artifactId>
-                <version>2.4.8</version>
-            </dependency>
-            <dependency>
-                <groupId>com.nimbusds</groupId>
-                <artifactId>nimbus-jose-jwt</artifactId>
-                <version>9.31</version>
-            </dependency>
+
             <dependency>
                 <groupId>org.javassist</groupId>
                 <artifactId>javassist</artifactId>
@@ -444,15 +412,11 @@
                 <version>1.0.64</version>
             </dependency>
             <dependency>
-                <groupId>io.javaslang</groupId>
-                <artifactId>javaslang</artifactId>
-                <version>2.0.6</version>
-            </dependency>
-            <dependency>
                 <groupId>com.fasterxml.woodstox</groupId>
                 <artifactId>woodstox-core</artifactId>
                 <version>6.5.0</version>
             </dependency>
+            <!-- Slett når WS utgår -->
             <dependency>
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>jsr305</artifactId>
