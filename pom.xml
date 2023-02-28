@@ -58,7 +58,7 @@
 
         <cxf.version>3.5.5</cxf.version>
 
-        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
+        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -162,7 +162,7 @@
             <dependency>
                 <groupId>io.github.kobylynskyi</groupId>
                 <artifactId>graphql-java-codegen</artifactId>
-                <version>5.5.0</version>
+                <version>5.6.0</version>
             </dependency>
 
             <!-- Kafka -->
