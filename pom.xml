@@ -165,13 +165,6 @@
                 <type>pom</type>
             </dependency>
 
-            <!-- GraphQL -->
-            <dependency>
-                <groupId>io.github.kobylynskyi</groupId>
-                <artifactId>graphql-java-codegen</artifactId>
-                <version>5.6.0</version>
-            </dependency>
-
             <!-- Kafka -->
             <dependency>
                 <groupId>org.apache.kafka</groupId>
