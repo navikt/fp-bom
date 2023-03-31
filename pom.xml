@@ -56,7 +56,7 @@
 
         <reflections.version>0.10.2</reflections.version>
 
-        <cxf.version>3.5.5</cxf.version>
+        <cxf.version>4.0.0</cxf.version>
 
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
     </properties>
