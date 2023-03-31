@@ -51,7 +51,7 @@
         <assertj.version>3.24.2</assertj.version>
 
         <jakarta.activation.version>1.2.2</jakarta.activation.version>
-        <jakarta.persistence.version>2.2.3</jakarta.persistence.version>
+        <jakarta.persistence.version>3.1.0</jakarta.persistence.version>
         <jakarta.jms-api.version>3.0.0</jakarta.jms-api.version>
 
         <reflections.version>0.10.2</reflections.version>
