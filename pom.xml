@@ -525,7 +525,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>jaxb2-maven-plugin</artifactId>
-                    <version>2.5.0</version>
+                    <version>3.1.0</version>
                 </plugin>
                 <!-- Brukes av jakarta-dev-transformer -->
                 <plugin>
