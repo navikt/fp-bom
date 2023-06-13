@@ -231,6 +231,12 @@
                 <version>${flyway.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-database-oracle</artifactId>
+                <version>${flyway.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>com.zaxxer</groupId>
                 <artifactId>HikariCP</artifactId>
                 <version>${hikari.version}</version>
