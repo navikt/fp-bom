@@ -1,7 +1,7 @@
 name: Publiser release
 on:
   release:
-    types: [published]
+    types: [ published ]
 
 jobs:
   release:
@@ -13,3 +13,24 @@ jobs:
       release-version: ${{ github.event.release.tag_name }}
       release-profiles: ''
     secrets: inherit
+
+  release-ee9:
+    name: Kontrakt EE9
+    needs: release
+    permissions:
+      packages: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3.3.0
+
+      - name: Setup java and maven
+        uses: navikt/fp-gha-workflows/.github/actions/setup-java-and-maven@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          java-version: '17'
+
+      - name: Publish artifacts
+        run: |
+          mvn -B -s settings.xml versions:set -DnewVersion=${{ github.event.release.tag_name }} -f ./ee9/pom.xml
+          mvn -B -s settings.xml -DskipTests clean deploy -f ./ee9/pom.xml
