@@ -59,6 +59,22 @@
         <cxf.version>3.5.5</cxf.version>
 
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
+        <jakarta.jakartaee-bom.version>8.0.0</jakarta.jakartaee-bom.version>
+        <weld-core-bom.version>3.1.9.Final</weld-core-bom.version>
+
+        <jandex-maven-plugin.version>1.2.3</jandex-maven-plugin.version>
+        <jandex.version>2.4.3.Final</jandex.version>
+
+        <jaxb-bom.version>2.3.6</jaxb-bom.version>
+        <hibernate-validator.version>6.2.2.Final</hibernate-validator.version>
+
+        <saaj-impl.version>1.5.3</saaj-impl.version>
+        <xmlsec.version>2.3.0</xmlsec.version>
+
+        <jakarta.el.version>3.0.4</jakarta.el.version>
+        <jakarta.xml.ws-api.version>2.3.3</jakarta.xml.ws-api.version>
+        <jakarta.jws-api.version>2.1.0</jakarta.jws-api.version>
+        <jaxb2-maven-plugin.version>2.5.0</jaxb2-maven-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -67,7 +83,7 @@
             <dependency>
                 <groupId>jakarta.platform</groupId>
                 <artifactId>jakarta.jakartaee-bom</artifactId>
-                <version>8.0.0</version>
+                <version>${jakarta.jakartaee-bom.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
@@ -118,7 +134,7 @@
             <dependency>
                 <groupId>org.jboss.weld</groupId>
                 <artifactId>weld-core-bom</artifactId>
-                <version>3.1.9.Final</version>
+                <version>${weld-core-bom.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
@@ -126,7 +142,7 @@
             <dependency>
                 <groupId>org.jboss</groupId>
                 <artifactId>jandex</artifactId>
-                <version>2.4.3.Final</version>
+                <version>${jandex.version}</version>
             </dependency>
 
             <!-- Jackson BOM -->
@@ -142,7 +158,7 @@
             <dependency>
                 <groupId>org.glassfish.jaxb</groupId>
                 <artifactId>jaxb-bom</artifactId>
-                <version>2.3.6</version>
+                <version>${jaxb-bom.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
@@ -181,7 +197,7 @@
             <dependency>
                 <groupId>org.hibernate.validator</groupId>
                 <artifactId>hibernate-validator</artifactId>
-                <version>6.2.2.Final</version>
+                <version>${hibernate-validator.version}</version>
             </dependency>
 
             <!-- Hibernate -->
@@ -221,7 +237,7 @@
             <dependency>
                 <groupId>com.sun.xml.messaging.saaj</groupId>
                 <artifactId>saaj-impl</artifactId>
-                <version>1.5.3</version>
+                <version>${saaj-impl.version}</version>
             </dependency>
 
             <!-- Database -->
@@ -383,7 +399,7 @@
             <dependency>
                 <groupId>org.apache.santuario</groupId>
                 <artifactId>xmlsec</artifactId>
-                <version>2.3.0</version>
+                <version>${xmlsec.version}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>com.fasterxml.woodstox</groupId>
@@ -426,19 +442,19 @@
             <dependency>
                 <groupId>org.glassfish</groupId>
                 <artifactId>jakarta.el</artifactId>
-                <version>3.0.4</version>
+                <version>${jakarta.el.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>jakarta.xml.ws</groupId>
                 <artifactId>jakarta.xml.ws-api</artifactId>
-                <version>2.3.3</version>
+                <version>${jakarta.xml.ws-api.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>jakarta.jws</groupId>
                 <artifactId>jakarta.jws-api</artifactId>
-                <version>2.1.0</version>
+                <version>${jakarta.jws-api.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -513,7 +529,7 @@
                 <plugin>
                     <groupId>org.jboss.jandex</groupId>
                     <artifactId>jandex-maven-plugin</artifactId>
-                    <version>1.2.3</version>
+                    <version>${jandex-maven-plugin.version}</version>
                     <executions>
                         <execution>
                             <id>make-index</id>
@@ -526,7 +542,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>jaxb2-maven-plugin</artifactId>
-                    <version>2.5.0</version>
+                    <version>${jaxb2-maven-plugin.version}</version>
                 </plugin>
                 <!-- Brukes av jakarta-dev-transformer -->
                 <plugin>
