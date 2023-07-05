@@ -51,3 +51,7 @@ Fasses ut:
 * DB Change Management - [Flyway DB](https://flywaydb.org/)
 * Connection Pool Management - [HikariCP](https://github.com/brettwooldridge/HikariCP)
 * Monitoring - [Prometheus](https://prometheus.io/) + [Micrometer](https://micrometer.io/) + [Dropwizard Metrics](https://metrics.dropwizard.io/4.2.0/)
+
+### Migrering til jakarta
+* Swagger dependencies endrer artefakt postfix til `-jakarta`. F.eks: `<artifactId>swagger-jaxrs2</artifactId>` blir til `<artifactId>swagger-jaxrs2-jakarta</artifactId>` versjonen er den samme.
+* Jandex endrer groupId fra `<groupId>org.jboss</groupId>` til `<groupId>io.smallrye</groupId>`
