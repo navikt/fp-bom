@@ -16,6 +16,7 @@ jobs:
 
   release-ee9:
     name: Kontrakt EE9
+    needs: release
     permissions:
       packages: write
     uses: navikt/fp-gha-workflows/.github/workflows/release-feature.yml@main
