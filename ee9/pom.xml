@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>no.nav.foreldrepenger.felles</groupId>
-    <artifactId>fp-bom-jakarta</artifactId>
+    <artifactId>fp-bom</artifactId>
     <packaging>pom</packaging>
     <name>Foreldrepenger :: EE9 Bill of Materials</name>
     <version>2.0.0-SNAPSHOT</version>
@@ -90,8 +90,8 @@
 
             <dependency>
                 <groupId>no.nav.foreldrepenger</groupId>
-                <artifactId>konfig-jakarta</artifactId>
-                <version>2.0.2</version>
+                <artifactId>konfig</artifactId>
+                <version>2.0.3-jakarta</version>
             </dependency>
 
             <!-- Jetty BOM -->
@@ -186,6 +186,11 @@
             </dependency>
 
             <!-- Utils -->
+            <dependency>
+                <groupId>org.codehaus.woodstox</groupId>
+                <artifactId>woodstox-core</artifactId>
+                <version>6.2.1</version>
+            </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
@@ -359,6 +364,12 @@
                 <groupId>org.apache.santuario</groupId>
                 <artifactId>xmlsec</artifactId>
                 <version>${xmlsec.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.fasterxml.woodstox</groupId>
+                        <artifactId>woodstox-core</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>net.bytebuddy</groupId>
@@ -660,7 +671,7 @@
             </plugin>
 
             <plugin>
-                <groupId>io.smallrye</groupId>
+                <groupId>org.jboss.jandex</groupId>
                 <artifactId>jandex-maven-plugin</artifactId>
             </plugin>
         </plugins>

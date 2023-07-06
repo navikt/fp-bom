@@ -32,5 +32,5 @@ jobs:
 
       - name: Publish artifacts
         run: |
-          mvn -B -s settings.xml versions:set -DnewVersion=${{ github.event.release.tag_name }} -f ./ee9/pom.xml
+          mvn -B -s settings.xml versions:set -DnewVersion=${{ github.event.release.tag_name && '-jakarta' }} -f ./ee9/pom.xml
           mvn -B -s settings.xml -DskipTests clean deploy -f ./ee9/pom.xml
