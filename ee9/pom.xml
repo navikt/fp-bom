@@ -27,8 +27,6 @@
         <jetty.version>11.0.15</jetty.version>
         <jersey.version>3.0.8</jersey.version>
 
-        <no.nav.security.version>3.1.0</no.nav.security.version>
-
         <logback.version>1.4.8</logback.version>
 
         <cxf.version>4.0.2</cxf.version>
@@ -175,12 +173,12 @@
 
             <!-- Hibernate -->
             <dependency>
-                <groupId>org.hibernate</groupId>
+                <groupId>org.hibernate.orm</groupId>
                 <artifactId>hibernate-core</artifactId>
                 <version>${hibernate.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.hibernate</groupId>
+                <groupId>org.hibernate.orm</groupId>
                 <artifactId>hibernate-micrometer</artifactId>
                 <version>${hibernate.version}</version>
             </dependency>
@@ -252,6 +250,13 @@
                 <version>${prometheus.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
+            </dependency>
+
+            <!-- Token validering -->
+            <dependency>
+                <groupId>org.bitbucket.b_c</groupId>
+                <artifactId>jose4j</artifactId>
+                <version>0.9.3</version>
             </dependency>
 
             <!-- Micrometer -->
