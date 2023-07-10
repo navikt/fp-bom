@@ -45,7 +45,7 @@
         <xmlsec.version>2.3.0</xmlsec.version>
 
         <jakarta.el.version>3.0.4</jakarta.el.version>
-        <swagger.version>2.2.14</swagger.version>
+        <swagger.version>2.2.15</swagger.version>
 
         <!-- maven jakarta kompatible plugins -->
         <jaxb2-maven-plugin.version>2.5.0</jaxb2-maven-plugin.version>
