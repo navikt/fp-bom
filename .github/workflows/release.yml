@@ -6,7 +6,6 @@ on:
 jobs:
   release-ee10:
     name: Kontrakt EE10
-    needs: release
     permissions:
       packages: write
     uses: navikt/fp-gha-workflows/.github/workflows/release-feature.yml@main
@@ -18,7 +17,7 @@ jobs:
 
   release-ee9:
     name: Kontrakt EE9
-    needs: release
+    needs: release-ee10
     permissions:
       packages: write
     uses: navikt/fp-gha-workflows/.github/workflows/release-feature.yml@main
@@ -30,6 +29,7 @@ jobs:
 
   release-ee8:
     name: Kontrakt
+    needs: release-ee9
     permissions:
       packages: write
     uses: navikt/fp-gha-workflows/.github/workflows/release-feature.yml@main
