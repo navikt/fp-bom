@@ -29,6 +29,8 @@
 
         <logback.version>1.4.11</logback.version>
 
+        <cxf.version>4.0.2</cxf.version>
+
         <weld-core-bom.version>5.1.1.Final</weld-core-bom.version>
 
         <jandex-maven-plugin.version>1.2.3</jandex-maven-plugin.version>
@@ -50,7 +52,7 @@
 
         <!-- Andre avhengigheter -->
         <prometheus.version>0.16.0</prometheus.version>
-        <micrometer.version>1.11.2</micrometer.version>
+        <micrometer.version>1.11.3</micrometer.version>
         <metrics.version>4.2.15</metrics.version>
 
         <slf4j.version>2.0.7</slf4j.version>
@@ -137,6 +139,15 @@
                 <groupId>org.glassfish.jersey</groupId>
                 <artifactId>jersey-bom</artifactId>
                 <version>${jersey.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+
+            <!-- Apache CXF -->
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-bom</artifactId>
+                <version>${cxf.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
@@ -368,7 +379,7 @@
             <dependency>
                 <groupId>net.bytebuddy</groupId>
                 <artifactId>byte-buddy</artifactId>
-                <version>1.14.5</version>
+                <version>1.14.6</version>
             </dependency>
 
             <dependency>
