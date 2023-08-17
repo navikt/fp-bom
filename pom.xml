@@ -78,7 +78,7 @@
         <jakarta.jws-api.version>2.1.0</jakarta.jws-api.version>
         <jakarta.activation.version>1.2.2</jakarta.activation.version>
         <jakarta.persistence.version>2.2.3</jakarta.persistence.version>
-        <jakarta.jms-api.version>3.0.0</jakarta.jms-api.version>
+        <jakarta.jms-api.version>3.1.0</jakarta.jms-api.version>
     </properties>
 
     <dependencyManagement>
