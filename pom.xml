@@ -7,7 +7,7 @@
     <artifactId>fp-bom</artifactId>
     <packaging>pom</packaging>
     <name>Foreldrepenger :: Bill of Materials</name>
-    <version>1.1.0-SNAPSHOT</version>
+    <version>2.0.0-SNAPSHOT</version>
 
     <properties>
         <java.version>17</java.version>
@@ -22,33 +22,33 @@
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
         <!-- Java Enterprise -->
-        <jakarta.jakartaee-bom.version>8.0.0</jakarta.jakartaee-bom.version>
+        <jakarta.jakartaee-bom.version>9.1.0</jakarta.jakartaee-bom.version>
 
-        <jetty.version>10.0.15</jetty.version>
-        <jersey.version>2.39.1</jersey.version>
+        <jetty.version>11.0.15</jetty.version>
+        <jersey.version>3.0.11</jersey.version>
 
-        <logback.version>1.3.11</logback.version>
+        <logback.version>1.4.11</logback.version>
 
-        <cxf.version>3.5.5</cxf.version>
+        <cxf.version>4.0.2</cxf.version>
 
-        <weld-core-bom.version>3.1.9.Final</weld-core-bom.version>
+        <weld-core-bom.version>4.0.3.Final</weld-core-bom.version>
 
         <jandex-maven-plugin.version>1.2.3</jandex-maven-plugin.version>
         <jandex.version>2.4.3.Final</jandex.version>
 
-        <jaxb-bom.version>2.3.6</jaxb-bom.version>
+        <jaxb-bom.version>3.0.1</jaxb-bom.version>
 
-        <hibernate-validator.version>6.2.2.Final</hibernate-validator.version>
-        <hibernate.version>5.6.15.Final</hibernate.version>
+        <hibernate-validator.version>7.0.5.Final</hibernate-validator.version>
+        <hibernate.version>6.1.7.Final</hibernate.version>
 
-        <saaj-impl.version>1.5.3</saaj-impl.version>
-        <xmlsec.version>2.3.0</xmlsec.version>
+        <saaj-impl.version>2.0.1</saaj-impl.version>
+        <xmlsec.version>3.0.2</xmlsec.version>
 
-        <jakarta.el.version>3.0.4</jakarta.el.version>
+        <jakarta.el.version>4.0.0</jakarta.el.version>
         <swagger.version>2.2.15</swagger.version>
 
         <!-- maven jakarta kompatible plugins -->
-        <jaxb2-maven-plugin.version>2.5.0</jaxb2-maven-plugin.version>
+        <jaxb2-maven-plugin.version>3.1.0</jaxb2-maven-plugin.version>
 
         <!-- Andre avhengigheter -->
         <prometheus.version>0.16.0</prometheus.version>
@@ -73,12 +73,6 @@
         <reflections.version>0.10.2</reflections.version>
 
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
-
-        <jakarta.xml.ws-api.version>2.3.3</jakarta.xml.ws-api.version>
-        <jakarta.jws-api.version>2.1.0</jakarta.jws-api.version>
-        <jakarta.activation.version>1.2.2</jakarta.activation.version>
-        <jakarta.persistence.version>2.2.3</jakarta.persistence.version>
-        <jakarta.jms-api.version>3.0.0</jakarta.jms-api.version>
     </properties>
 
     <dependencyManagement>
@@ -95,7 +89,7 @@
             <dependency>
                 <groupId>no.nav.foreldrepenger</groupId>
                 <artifactId>konfig</artifactId>
-                <version>2.1.1</version>
+                <version>2.2.0</version>
             </dependency>
 
             <!-- Jetty BOM -->
@@ -107,47 +101,6 @@
                 <type>pom</type>
             </dependency>
 
-            <dependency>
-                <!-- kan fjernes ved Jakarta EE 9/ oppgradering av jakarta.platform -->
-                <groupId>jakarta.activation</groupId>
-                <artifactId>jakarta.activation-api</artifactId>
-                <version>${jakarta.activation.version}</version>
-            </dependency>
-            <dependency>
-                <!-- kan fjernes ved Jakarta EE 9/ oppgradering av jakarta.platform -->
-                <groupId>com.sun.activation</groupId>
-                <artifactId>jakarta.activation</artifactId>
-                <version>${jakarta.activation.version}</version>
-            </dependency>
-
-            <dependency>
-                <!-- kan fjernes ved Jakarta EE 9/ oppgradering av jakarta.platform -->
-                <groupId>jakarta.persistence</groupId>
-                <artifactId>jakarta.persistence-api</artifactId>
-                <version>${jakarta.persistence.version}</version>
-            </dependency>
-
-            <dependency>
-                <!-- kan fjernes ved Jakarta EE 9/ oppgradering av jakarta.platform -->
-                <groupId>jakarta.jms</groupId>
-                <artifactId>jakarta.jms-api</artifactId>
-                <version>${jakarta.jms-api.version}</version>
-            </dependency>
-
-            <dependency>
-                <!-- kan fjernes ved Jakarta EE 9/ oppgradering av jakarta.platform -->
-                <groupId>jakarta.xml.ws</groupId>
-                <artifactId>jakarta.xml.ws-api</artifactId>
-                <version>${jakarta.xml.ws-api.version}</version>
-            </dependency>
-
-            <dependency>
-                <!-- kan fjernes ved Jakarta EE 9/ oppgradering av jakarta.platform -->
-                <groupId>jakarta.jws</groupId>
-                <artifactId>jakarta.jws-api</artifactId>
-                <version>${jakarta.jws-api.version}</version>
-            </dependency>
-
             <!-- WELD BOM -->
             <dependency>
                 <groupId>org.jboss.weld</groupId>
@@ -156,7 +109,7 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
-            <!-- jandex brukes av weld (leser format 2.3 prdousert av jandex-maven 1.1.1 (ikke 1.2.0) + dto-tester -->
+
             <dependency>
                 <groupId>org.jboss</groupId>
                 <artifactId>jandex</artifactId>
@@ -220,26 +173,12 @@
 
             <!-- Hibernate -->
             <dependency>
-                <groupId>org.hibernate</groupId>
+                <groupId>org.hibernate.orm</groupId>
                 <artifactId>hibernate-core</artifactId>
                 <version>${hibernate.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.jboss.spec.javax.transaction</groupId>
-                        <artifactId>jboss-transaction-api_1.2_spec</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>javax.activation</groupId>
-                        <artifactId>javax.activation-api</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>javax.persistence</groupId>
-                        <artifactId>javax.persistence-api</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
-                <groupId>org.hibernate</groupId>
+                <groupId>org.hibernate.orm</groupId>
                 <artifactId>hibernate-micrometer</artifactId>
                 <version>${hibernate.version}</version>
             </dependency>
@@ -367,17 +306,17 @@
             <!-- Swagger starter-->
             <dependency>
                 <groupId>io.swagger.core.v3</groupId>
-                <artifactId>swagger-jaxrs2</artifactId>
+                <artifactId>swagger-jaxrs2-jakarta</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.swagger.core.v3</groupId>
-                <artifactId>swagger-annotations</artifactId>
+                <artifactId>swagger-annotations-jakarta</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.swagger.core.v3</groupId>
-                <artifactId>swagger-core</artifactId>
+                <artifactId>swagger-core-jakarta</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
 
