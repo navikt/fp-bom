@@ -21,7 +21,7 @@ jobs:
       contents: read
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v3.6.0
         with:
           fetch-depth: "0"
 
@@ -36,10 +36,10 @@ jobs:
         run: |
           mvn verify -e -B -s settings.xml
 
-      - name: Verify EE9
+      - name: Verify EE10
         shell: bash
         run: |
-          mvn verify -e -B -s settings.xml -f ./ee9/pom.xml
+          mvn verify -e -B -s settings.xml -f ./ee10/pom.xml
 
   release-drafter:
     name: Update

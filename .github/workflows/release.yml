@@ -6,6 +6,8 @@ on:
 jobs:
   release-ee10:
     name: Kontrakt EE10
+    if: false
+    needs: [release]
     permissions:
       packages: write
     uses: navikt/fp-gha-workflows/.github/workflows/release-feature.yml@main
@@ -15,21 +17,8 @@ jobs:
       release-profiles: ''
     secrets: inherit
 
-  release-ee9:
-    name: Kontrakt EE9
-    needs: release-ee10
-    permissions:
-      packages: write
-    uses: navikt/fp-gha-workflows/.github/workflows/release-feature.yml@main
-    with:
-      release-version: ${{ format('{0}-{1}', github.event.release.tag_name, 'ee9') }}
-      release-file: '-f ./ee9/pom.xml'
-      release-profiles: ''
-    secrets: inherit
-
-  release-ee8:
+  release:
     name: Kontrakt
-    needs: release-ee9
     permissions:
       packages: write
     uses: navikt/fp-gha-workflows/.github/workflows/release-feature.yml@main
