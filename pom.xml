@@ -42,7 +42,7 @@
         <hibernate.version>6.1.7.Final</hibernate.version>
 
         <saaj-impl.version>2.0.1</saaj-impl.version>
-        <xmlsec.version>3.0.2</xmlsec.version>
+        <xmlsec.version>3.0.3</xmlsec.version>
 
         <jakarta.el.version>4.0.2</jakarta.el.version>
         <swagger.version>2.2.18</swagger.version>
