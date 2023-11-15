@@ -374,7 +374,7 @@
             <dependency>
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bcprov-jdk15to18</artifactId>
-                <version>1.76</version>
+                <version>1.77</version>
             </dependency>
             <!-- Fikser https://cwe.mitre.org/data/definitions/502.html -->
             <dependency>
