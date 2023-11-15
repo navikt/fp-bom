@@ -368,7 +368,7 @@
             <dependency>
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bcprov-jdk18on</artifactId>
-                <version>1.76</version>
+                <version>1.77</version>
             </dependency>
             <!-- https://github.com/advisories/GHSA-hr8g-6v94-x4m9 -->
             <dependency>
