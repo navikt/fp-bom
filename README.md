@@ -20,12 +20,7 @@ Platform - [Jakarta EE 9.1](https://projects.eclipse.org/releases/jakarta-ee-9)
 * Expression Language (EL) - [Glassfish Jakarta EL](https://mvnrepository.com/artifact/org.glassfish/jakarta.el) - brukes av CDI, JSP, JSF
 
 Fasses ut:
-* SOAP with Attachments - [Sun SAAJ](https://javaee.github.io/metro-saaj/)
 * XML Binding - SUN [jaxb-impl](https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl) og Glassfish [jaxb-runtime](https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime)
-* XML Web Services (JAX-WS) - [Apache CXF](https://cxf.apache.org/)
-* Web Services Metadata - [Apache CXF](https://cxf.apache.org/)
-* Enterprise Web Services - [Apache CXF](https://cxf.apache.org/)
-* Activation - [SUN Activation](https://projects.eclipse.org/projects/ee4j.jaf) - brukes av XML Web Services
 
 ### Databaser
 
