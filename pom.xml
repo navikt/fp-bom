@@ -189,12 +189,12 @@
             <!-- Database -->
             <dependency>
                 <groupId>org.flywaydb</groupId>
-                <artifactId>flyway-core</artifactId>
+                <artifactId>flyway-database-oracle</artifactId>
                 <version>${flyway.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.flywaydb</groupId>
-                <artifactId>flyway-database-oracle</artifactId>
+                <artifactId>flyway-database-postgresql</artifactId>
                 <version>${flyway.version}</version>
             </dependency>
 
