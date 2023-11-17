@@ -29,8 +29,6 @@
 
         <logback.version>1.4.11</logback.version>
 
-        <cxf.version>4.0.3</cxf.version>
-
         <weld-core-bom.version>4.0.3.Final</weld-core-bom.version>
 
         <jandex-maven-plugin.version>3.1.5</jandex-maven-plugin.version>
@@ -130,15 +128,6 @@
                 <groupId>org.glassfish.jersey</groupId>
                 <artifactId>jersey-bom</artifactId>
                 <version>${jersey.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-
-            <!-- Apache CXF -->
-            <dependency>
-                <groupId>org.apache.cxf</groupId>
-                <artifactId>cxf-bom</artifactId>
-                <version>${cxf.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
