@@ -29,7 +29,6 @@ jobs:
         uses: navikt/fp-gha-workflows/.github/actions/setup-java-and-maven@main
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          java-version: '17'
 
       - name: Verify
         shell: bash
