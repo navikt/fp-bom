@@ -4,7 +4,7 @@ Inneholder en felles Bill of Material (BOM) som brukes av alle biblioteker/appli
 
 ## Teknologi oversikt
 
-Platform - [Jakarta EE 9.1](https://projects.eclipse.org/releases/jakarta-ee-9)
+Platform - [Jakarta EE 10](https://projects.eclipse.org/releases/jakarta-10)
 
 ### Jakarta API implementasjoner brukt
 
