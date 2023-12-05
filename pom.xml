@@ -22,22 +22,22 @@
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
         <!-- Java Enterprise -->
-        <jakarta.jakartaee-bom.version>9.1.0</jakarta.jakartaee-bom.version>
+        <jakarta.jakartaee-bom.version>10.0.0</jakarta.jakartaee-bom.version>
 
-        <jetty.version>11.0.17</jetty.version>
-        <jersey.version>3.0.11</jersey.version>
+        <jetty.version>12.0.3</jetty.version>
+        <jersey.version>3.1.4</jersey.version>
 
         <logback.version>1.4.14</logback.version>
 
-        <weld-core-bom.version>4.0.3.Final</weld-core-bom.version>
+        <weld-core-bom.version>5.1.2.Final</weld-core-bom.version>
 
         <jandex-maven-plugin.version>3.1.6</jandex-maven-plugin.version>
-        <jandex.version>2.4.4.Final</jandex.version>
+        <jandex.version>3.1.6</jandex.version>
 
-        <jaxb-bom.version>3.0.2</jaxb-bom.version>
+        <jaxb-bom.version>4.0.4</jaxb-bom.version>
 
-        <hibernate-validator.version>7.0.5.Final</hibernate-validator.version>
-        <hibernate.version>6.1.7.Final</hibernate.version>
+        <hibernate-validator.version>8.0.1.Final</hibernate-validator.version>
+        <hibernate.version>6.3.2.Final</hibernate.version> <!-- 6.4.0.Final er buggy se HHH-17489 -->
 
         <jakarta.el.version>4.0.2</jakarta.el.version>
         <swagger.version>2.2.19</swagger.version>
@@ -54,7 +54,7 @@
         <logstash.version>7.4</logstash.version>
         <logback-syslog4j.version>1.0.0</logback-syslog4j.version>
 
-        <kafka.version>3.5.1</kafka.version>
+        <kafka.version>3.5.1</kafka.version> <!-- 3.6.0 logger excessive -->
 
         <hikari.version>5.1.0</hikari.version>
         <flyway.version>10.1.0</flyway.version>
@@ -89,7 +89,19 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty.ee10</groupId>
+                <artifactId>jetty-ee10-bom</artifactId>
+                <version>${jetty.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
 
+            <dependency>
+                <groupId>jakarta.enterprise</groupId>
+                <artifactId>jakarta.enterprise.cdi-api</artifactId>
+                <version>4.0.1</version>
+            </dependency>
             <!-- WELD BOM -->
             <dependency>
                 <groupId>org.jboss.weld</groupId>
@@ -489,9 +501,6 @@
                             </goals>
                         </execution>
                     </executions>
-                    <configuration>
-                        <indexVersion>10</indexVersion>
-                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>

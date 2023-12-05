@@ -4,19 +4,6 @@ on:
     types: [ published ]
 
 jobs:
-  release-ee10:
-    name: Kontrakt EE10
-    if: false
-    needs: [release]
-    permissions:
-      packages: write
-    uses: navikt/fp-gha-workflows/.github/workflows/release-feature.yml@main
-    with:
-      release-version: ${{ format('{0}-{1}', github.event.release.tag_name, 'ee10') }}
-      release-file: '-f ./ee10/pom.xml'
-      release-profiles: ''
-    secrets: inherit
-
   release:
     name: Kontrakt
     permissions:

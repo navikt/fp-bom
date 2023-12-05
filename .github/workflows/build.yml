@@ -35,11 +35,6 @@ jobs:
         run: |
           mvn verify -e -B -s settings.xml
 
-      - name: Verify EE10
-        shell: bash
-        run: |
-          mvn verify -e -B -s settings.xml -f ./ee10/pom.xml
-
   release-drafter:
     name: Update
     permissions:
