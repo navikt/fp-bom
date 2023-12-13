@@ -25,7 +25,7 @@
         <jakarta.jakartaee-bom.version>10.0.0</jakarta.jakartaee-bom.version>
 
         <jetty.version>12.0.4</jetty.version>
-        <jersey.version>3.1.4</jersey.version>
+        <jersey.version>3.1.5</jersey.version>
 
         <logback.version>1.4.14</logback.version>
 
