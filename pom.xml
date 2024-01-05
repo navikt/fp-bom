@@ -37,7 +37,7 @@
         <jaxb-bom.version>4.0.4</jaxb-bom.version>
 
         <hibernate-validator.version>8.0.1.Final</hibernate-validator.version>
-        <hibernate.version>6.3.2.Final</hibernate.version> <!-- 6.4.0.Final er buggy se HHH-17489 -->
+        <hibernate.version>6.4.1.Final</hibernate.version> <!-- 6.4.0.Final er buggy se HHH-17489 -->
 
         <jakarta.el.version>4.0.2</jakarta.el.version>
         <swagger.version>2.2.20</swagger.version>
