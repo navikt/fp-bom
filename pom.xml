@@ -62,8 +62,8 @@
         <vault-jdbc.version>1.3.10</vault-jdbc.version>
 
         <junit.version>5.10.1</junit.version>
-        <mockito.version>5.8.0</mockito.version>
         <assertj.version>3.25.2</assertj.version>
+        <mockito.version>5.10.0</mockito.version>
 
         <reflections.version>0.10.2</reflections.version>
 
