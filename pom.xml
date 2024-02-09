@@ -348,7 +348,7 @@
             <dependency>
                 <groupId>commons-codec</groupId>
                 <artifactId>commons-codec</artifactId>
-                <version>1.16.0</version>
+                <version>1.16.1</version>
             </dependency>
             <!-- bcprov-jdk15on 1.64 sliter med https://security.snyk.io/vuln/SNYK-JAVA-ORGBOUNCYCASTLE-1296075-->
             <dependency>
