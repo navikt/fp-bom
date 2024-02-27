@@ -398,7 +398,7 @@
             <dependency>
                 <groupId>com.fasterxml.woodstox</groupId>
                 <artifactId>woodstox-core</artifactId>
-                <version>6.6.0</version>
+                <version>6.6.1</version>
             </dependency>
             <!-- Slett når WS utgår -->
             <dependency>
