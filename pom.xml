@@ -34,7 +34,7 @@
         <jandex-maven-plugin.version>3.1.6</jandex-maven-plugin.version>
         <jandex.version>3.1.6</jandex.version>
 
-        <jaxb-bom.version>4.0.4</jaxb-bom.version>
+        <jaxb-bom.version>4.0.5</jaxb-bom.version>
 
         <hibernate-validator.version>8.0.1.Final</hibernate-validator.version>
         <hibernate.version>6.4.4.Final</hibernate.version> <!-- 6.4.0.Final er buggy se HHH-17489 -->
