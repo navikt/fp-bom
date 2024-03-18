@@ -350,21 +350,9 @@
                 <artifactId>commons-codec</artifactId>
                 <version>1.16.1</version>
             </dependency>
-            <!-- bcprov-jdk15on 1.64 sliter med https://security.snyk.io/vuln/SNYK-JAVA-ORGBOUNCYCASTLE-1296075-->
-            <dependency>
-                <groupId>org.bouncycastle</groupId>
-                <artifactId>bcprov-jdk15on</artifactId>
-                <version>1.70</version>
-            </dependency>
             <dependency>
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bcprov-jdk18on</artifactId>
-                <version>1.77</version>
-            </dependency>
-            <!-- https://github.com/advisories/GHSA-hr8g-6v94-x4m9 -->
-            <dependency>
-                <groupId>org.bouncycastle</groupId>
-                <artifactId>bcprov-jdk15to18</artifactId>
                 <version>1.77</version>
             </dependency>
             <!-- Fikser https://cwe.mitre.org/data/definitions/502.html -->
