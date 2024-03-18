@@ -31,7 +31,7 @@
 
         <weld-core-bom.version>5.1.2.Final</weld-core-bom.version>
 
-        <jandex-maven-plugin.version>3.1.6</jandex-maven-plugin.version>
+        <jandex-maven-plugin.version>3.1.7</jandex-maven-plugin.version>
         <jandex.version>3.1.6</jandex.version>
 
         <jaxb-bom.version>4.0.5</jaxb-bom.version>
