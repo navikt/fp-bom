@@ -350,11 +350,6 @@
                 <artifactId>commons-codec</artifactId>
                 <version>1.16.1</version>
             </dependency>
-            <dependency>
-                <groupId>org.bouncycastle</groupId>
-                <artifactId>bcprov-jdk18on</artifactId>
-                <version>1.77</version>
-            </dependency>
             <!-- Fikser https://cwe.mitre.org/data/definitions/502.html -->
             <dependency>
                 <groupId>org.apache.avro</groupId>
