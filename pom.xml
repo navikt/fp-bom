@@ -40,7 +40,7 @@
         <hibernate.version>6.4.4.Final</hibernate.version> <!-- 6.4.0.Final er buggy se HHH-17489 -->
 
         <jakarta.el.version>4.0.2</jakarta.el.version>
-        <swagger.version>2.2.20</swagger.version>
+        <swagger.version>2.2.21</swagger.version>
 
         <!-- maven jakarta kompatible plugins -->
         <jaxb2-maven-plugin.version>3.1.0</jaxb2-maven-plugin.version>
