@@ -371,7 +371,7 @@
             <dependency>
                 <groupId>io.swagger</groupId>
                 <artifactId>swagger-compat-spec-parser</artifactId>
-                <version>1.0.69</version>
+                <version>1.0.70</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.woodstox</groupId>
