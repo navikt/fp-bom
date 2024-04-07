@@ -25,7 +25,7 @@
         <jakarta.jakartaee-bom.version>10.0.0</jakarta.jakartaee-bom.version>
 
         <jetty.version>12.0.8</jetty.version>
-        <jersey.version>3.1.5</jersey.version>
+        <jersey.version>3.1.6</jersey.version>
 
         <logback.version>1.5.3</logback.version>
 
@@ -532,7 +532,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>3.3.0</version>
+                    <version>3.3.1</version>
                     <executions>
                         <execution>
                             <id>attach-sources</id>
