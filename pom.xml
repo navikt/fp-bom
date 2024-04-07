@@ -39,7 +39,7 @@
         <hibernate-validator.version>8.0.1.Final</hibernate-validator.version>
         <hibernate.version>6.4.4.Final</hibernate.version> <!-- 6.4.0.Final er buggy se HHH-17489 -->
 
-        <jakarta.el.version>4.0.2</jakarta.el.version>
+        <jakarta.el.version>5.0.0</jakarta.el.version>
         <swagger.version>2.2.21</swagger.version>
 
         <!-- maven jakarta kompatible plugins -->
@@ -397,10 +397,11 @@
                 <!-- oppdaterer versjon for å bli kvitt CVE-2023-34455 CVE-2023-34454 CVE-2023-34453 -->
                 <version>1.1.10.5</version>
             </dependency>
-            
+
+            <!-- brukes av hibernate-validator -->
             <dependency>
-                <groupId>org.glassfish</groupId>
-                <artifactId>jakarta.el</artifactId>
+                <groupId>org.glassfish.expressly</groupId>
+                <artifactId>expressly</artifactId>
                 <version>${jakarta.el.version}</version>
             </dependency>
         </dependencies>
