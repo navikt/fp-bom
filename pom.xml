@@ -34,14 +34,14 @@
         <hibernate.version>6.4.4.Final</hibernate.version>
 
         <!-- Annet for WebApps -->
-        <jandex-maven-plugin.version>3.1.7</jandex-maven-plugin.version>
+        <jandex-maven-plugin.version>3.1.8</jandex-maven-plugin.version>
         <jandex.version>3.1.7</jandex.version>
 
-        <swagger.version>2.2.21</swagger.version>
+        <swagger.version>2.2.22</swagger.version>
 
-        <micrometer.version>1.12.5</micrometer.version>
+        <micrometer.version>1.13.0</micrometer.version>
 
-        <logback.version>1.5.4</logback.version>
+        <logback.version>1.5.6</logback.version>
         <slf4j.version>2.0.13</slf4j.version>
         <logstash.version>7.4</logstash.version>
         <logback-syslog4j.version>1.0.0</logback-syslog4j.version>
@@ -56,11 +56,11 @@
         <!-- Test versions -->
         <junit.version>5.10.2</junit.version>
         <assertj.version>3.25.3</assertj.version>
-        <mockito.version>5.11.0</mockito.version>
+        <mockito.version>5.12.0</mockito.version>
         <reflections.version>0.10.2</reflections.version>
 
         <!-- Build versions -->
-        <jaxb2-maven-plugin.version>3.1.0</jaxb2-maven-plugin.version>
+        <jaxb2-maven-plugin.version>3.2.0</jaxb2-maven-plugin.version>
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
     </properties>
 
@@ -328,7 +328,7 @@
             <dependency>
                 <groupId>commons-codec</groupId>
                 <artifactId>commons-codec</artifactId>
-                <version>1.16.1</version>
+                <version>1.17.0</version>
             </dependency>
             <!-- Fikser https://cwe.mitre.org/data/definitions/502.html -->
             <dependency>
@@ -340,7 +340,7 @@
             <dependency>
                 <groupId>net.bytebuddy</groupId>
                 <artifactId>byte-buddy</artifactId>
-                <version>1.14.13</version>
+                <version>1.14.15</version>
             </dependency>
 
             <dependency>
@@ -356,7 +356,7 @@
             <dependency>
                 <groupId>io.swagger</groupId>
                 <artifactId>swagger-compat-spec-parser</artifactId>
-                <version>1.0.70</version>
+                <version>1.0.71</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.woodstox</groupId>
@@ -503,7 +503,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-install-plugin</artifactId>
-                    <version>3.1.1</version>
+                    <version>3.1.2</version>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -531,12 +531,12 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
-                    <version>3.1.1</version>
+                    <version>3.1.2</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.3.0</version>
+                    <version>3.4.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
