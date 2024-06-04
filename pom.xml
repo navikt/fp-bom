@@ -91,6 +91,12 @@
                 <type>pom</type>
             </dependency>
 
+            <!-- TODO: Fjerne ved upgrade til EE11 da er den med i pakken -->
+            <dependency>
+                <groupId>jakarta.enterprise</groupId>
+                <artifactId>jakarta.enterprise.cdi-api</artifactId>
+                <version>4.0.1</version>
+            </dependency>
             <!-- WELD BOM -->
             <dependency>
                 <groupId>org.jboss.weld</groupId>
