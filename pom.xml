@@ -26,7 +26,7 @@
 
         <!-- Jakarta EE implementations -->
         <jetty.version>12.0.10</jetty.version>
-        <jersey.version>3.1.6</jersey.version>
+        <jersey.version>3.1.7</jersey.version>
         <jakarta.el.version>5.0.0</jakarta.el.version>
         <weld-core-bom.version>5.1.2.Final</weld-core-bom.version>
         <jaxb-bom.version>4.0.5</jaxb-bom.version>
