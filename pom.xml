@@ -153,6 +153,12 @@
                 <artifactId>hibernate-validator</artifactId>
                 <version>${hibernate-validator.version}</version>
             </dependency>
+            <!-- brukes av hibernate-validator -->
+            <dependency>
+                <groupId>org.glassfish.expressly</groupId>
+                <artifactId>expressly</artifactId>
+                <version>${jakarta.el.version}</version>
+            </dependency>
 
             <!-- Hibernate -->
             <dependency>
@@ -312,13 +318,6 @@
                 <version>${assertj.version}</version>
             </dependency>
 
-            <!-- Slett når WS utgår -->
-            <dependency>
-                <groupId>org.reflections</groupId>
-                <artifactId>reflections</artifactId>
-                <version>${reflections.version}</version>
-            </dependency>
-
             <!-- Diverse enforcer resolutions for -->
             <!-- commons-codec 1.11 sliter med https://security.snyk.io/vuln/SNYK-JAVA-COMMONSCODEC-561518 -->
             <dependency>
@@ -354,11 +353,6 @@
                 <artifactId>swagger-compat-spec-parser</artifactId>
                 <version>1.0.71</version>
             </dependency>
-            <dependency>
-                <groupId>com.fasterxml.woodstox</groupId>
-                <artifactId>woodstox-core</artifactId>
-                <version>7.0.0</version>
-            </dependency>
 
             <dependency>
                 <!-- denne tas inn av com.ibm.mq.jakarta.client, overstyrer med nyere versjon. Trengs denne? -->
@@ -371,13 +365,6 @@
                 <artifactId>snappy-java</artifactId>
                 <!-- oppdaterer versjon for å bli kvitt CVE-2023-34455 CVE-2023-34454 CVE-2023-34453 -->
                 <version>1.1.10.5</version>
-            </dependency>
-
-            <!-- brukes av hibernate-validator -->
-            <dependency>
-                <groupId>org.glassfish.expressly</groupId>
-                <artifactId>expressly</artifactId>
-                <version>${jakarta.el.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
