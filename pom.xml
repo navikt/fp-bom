@@ -35,7 +35,7 @@
 
         <!-- Annet for WebApps -->
         <jandex-maven-plugin.version>3.2.1</jandex-maven-plugin.version>
-        <jandex.version>3.2.0</jandex.version>
+        <jandex.version>3.2.1</jandex.version>
 
         <swagger.version>2.2.22</swagger.version>
 
