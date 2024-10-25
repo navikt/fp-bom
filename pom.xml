@@ -34,7 +34,7 @@
         <hibernate.version>6.6.1.Final</hibernate.version>
 
         <!-- Annet for WebApps -->
-        <jandex-maven-plugin.version>3.2.2</jandex-maven-plugin.version>
+        <jandex-maven-plugin.version>3.2.3</jandex-maven-plugin.version>
         <jandex.version>3.2.2</jandex.version>
 
         <swagger.version>2.2.25</swagger.version>
