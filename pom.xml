@@ -313,6 +313,14 @@
                 <version>${assertj.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>testcontainers-bom</artifactId>
+                <version>1.20.3</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+
             <!-- Diverse enforcer resolutions for -->
             <!-- commons-codec 1.11 sliter med https://security.snyk.io/vuln/SNYK-JAVA-COMMONSCODEC-561518 -->
             <dependency>
