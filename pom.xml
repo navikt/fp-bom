@@ -529,7 +529,7 @@
                     <version>3.5.1</version>
                     <configuration>
                         <!-- Må ha @{argLine} ellers blir properties satt av jacoco-maven-plugin overkrevet -->
-                        <argLine>@{argLine} ${argLine} -javaagent:${org.mockito:mockito-core:jar}</argLine>
+                        <argLine>@{argLine} ${argLine}</argLine>
                     </configuration>
                 </plugin>
                 <!-- Kjører Databaseskjemainitialisering ved testing fra kommandolinja -->
