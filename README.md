@@ -46,3 +46,4 @@ Fasses ut:
 * DB Change Management - [Flyway DB](https://flywaydb.org/)
 * Connection Pool Management - [HikariCP](https://github.com/brettwooldridge/HikariCP)
 * Monitoring - [Prometheus](https://prometheus.io/) + [Micrometer](https://micrometer.io/)
+* OpenTelemetry - [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-java-instrumentation)
