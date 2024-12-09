@@ -337,6 +337,13 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
+            <!-- Testcontainer og sec update -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-compress</artifactId>
+                <scope>test</scope>
+                <version>[1.26.0,)</version>
+            </dependency>
 
             <!-- Diverse enforcer resolutions for -->
             <!-- commons-codec 1.11 sliter med https://security.snyk.io/vuln/SNYK-JAVA-COMMONSCODEC-561518 -->
