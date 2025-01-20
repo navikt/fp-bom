@@ -55,7 +55,7 @@
 
         <!-- Test versions -->
         <junit.version>5.11.4</junit.version>
-        <assertj.version>3.27.2</assertj.version>
+        <assertj.version>3.27.3</assertj.version>
         <mockito.version>5.15.2</mockito.version>
         <reflections.version>0.10.2</reflections.version>
 
