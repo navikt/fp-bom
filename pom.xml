@@ -62,7 +62,7 @@
         <!-- Build versions -->
         <jaxb2-maven-plugin.version>3.2.0</jaxb2-maven-plugin.version>
         <maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
-        <otel-instr-bom.version>2.13.3</otel-instr-bom.version>
+        <otel-instr-bom.version>2.14.0</otel-instr-bom.version>
     </properties>
 
     <dependencyManagement>
