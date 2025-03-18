@@ -46,7 +46,7 @@
         <logstash.version>8.0</logstash.version>
         <logback-syslog4j.version>1.0.0</logback-syslog4j.version>
 
-        <kafka.version>3.9.0</kafka.version>
+        <kafka.version>4.0.0</kafka.version>
 
         <hikari.version>6.2.1</hikari.version>
         <flyway.version>11.4.0</flyway.version>
