@@ -22,7 +22,7 @@
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
         <!-- Jakarta EE specifications -->
-        <jakarta.jakartaee-bom.version>10.0.0</jakarta.jakartaee-bom.version>
+        <jakarta.jakartaee-bom.version>11.0.0</jakarta.jakartaee-bom.version>
 
         <!-- Jakarta EE implementations -->
         <jetty.version>12.0.19</jetty.version>
