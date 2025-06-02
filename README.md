@@ -9,7 +9,6 @@ Platform - [Jakarta EE 10](https://projects.eclipse.org/releases/jakarta-10)
 ### Jakarta API implementasjoner brukt
 
 * Servlets - [Jetty Embedded Server](https://www.eclipse.org/jetty/documentation.php)
-* Authentication - [Jetty JAAS](https://www.eclipse.org/jetty/documentation/jetty-10/operations-guide/index.html#og-jaas), [Jetty JASPI](https://www.eclipse.org/jetty/documentation/jetty-10/operations-guide/index.html#og-jaspi) - fases ut
 * Persistence - [Hibernate ORM](https://hibernate.org/orm)
 * Bean Validation - [Hibernate Validator](https://hibernate.org/validator/)
 * Context and Dependency Injection (CDI) - [JBoss Weld Servlet Core](http://weld.cdi-spec.org/) + [Jandex](https://smallrye.io/jandex/jandex/3.0.0/index.html)
@@ -29,13 +28,12 @@ Fasses ut:
 
 ### Sikkerhet 
 
-* Token validering - [NAV Token Support](https://github.com/navikt/token-support) + [Jetty JASPI](https://www.eclipse.org/jetty/documentation/jetty-10/operations-guide/index.html#og-jaspi) - JASPI fases ut
-* Passord lagring - [Vault](https://www.vaultproject.io/) + Kubernetes [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/) 
-* Tilgangskontroll - [Axiomatisc ABAC](https://axiomatics.com/resources/reference-library/attribute-based-access-control-abac) - fases ut
+* Token validering - [NAV Token Support](https://github.com/navikt/token-support)
+* Passord lagring - [Vault](https://www.vaultproject.io/) + Kubernetes [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
 
 ### Andre
 
-* Applikasjons konfig - [fp-konfig](https://github.com/navikt/fp-felles/tree/master/felles/konfig)
+* Applikasjonskonfig - [fp-konfig](https://github.com/navikt/fp-felles/tree/master/felles/konfig)
 * Kafka - [Apache Kafka](https://kafka.apache.org/)
 * Kafka Schema - [Avro](https://docs.confluent.io/platform/current/schema-registry/serdes-develop/serdes-avro.html#avro-schema-serializer-and-deserializer)
 * Caching - [Ehcache](https://www.ehcache.org/)
