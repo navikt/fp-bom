@@ -44,7 +44,6 @@
         <logback.version>1.5.18</logback.version>
         <slf4j.version>2.0.17</slf4j.version>
         <logstash.version>8.1</logstash.version>
-        <logback-syslog4j.version>1.0.0</logback-syslog4j.version>
 
         <kafka.version>3.9.0</kafka.version>
 
@@ -261,11 +260,6 @@
                 <groupId>net.logstash.logback</groupId>
                 <artifactId>logstash-logback-encoder</artifactId>
                 <version>${logstash.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.papertrailapp</groupId>
-                <artifactId>logback-syslog4j</artifactId>
-                <version>${logback-syslog4j.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
