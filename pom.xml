@@ -45,7 +45,7 @@
         <slf4j.version>2.0.17</slf4j.version>
         <logstash.version>8.1</logstash.version>
 
-        <kafka.version>3.9.0</kafka.version>
+        <kafka.version>3.9.1</kafka.version>
 
         <hikari.version>6.3.0</hikari.version>
         <flyway.version>11.9.2</flyway.version>
