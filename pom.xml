@@ -37,7 +37,7 @@
         <jandex-maven-plugin.version>3.4.0</jandex-maven-plugin.version>
         <jandex.version>3.4.0</jandex.version>
 
-        <swagger.version>2.2.34</swagger.version>
+        <swagger.version>2.2.35</swagger.version>
 
         <micrometer.version>1.15.2</micrometer.version>
 
