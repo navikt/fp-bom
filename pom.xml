@@ -22,16 +22,16 @@
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
         <!-- Jakarta EE specifications -->
-        <jakarta.jakartaee-bom.version>10.0.0</jakarta.jakartaee-bom.version>
+        <jakarta.jakartaee-bom.version>11.0.0</jakarta.jakartaee-bom.version>
 
         <!-- Jakarta EE implementations -->
-        <jetty.version>12.0.25</jetty.version>
-        <jersey.version>3.1.11</jersey.version>
-        <jakarta.el.version>5.0.0</jakarta.el.version>
-        <weld-core-bom.version>5.1.6.Final</weld-core-bom.version>
+        <jetty.version>12.1.0</jetty.version>
+        <jersey.version>4.0.0-M3</jersey.version>
+        <jakarta.el.version>6.0.0</jakarta.el.version>
+        <weld-core-bom.version>6.0.3.Final</weld-core-bom.version>
         <jaxb-bom.version>4.0.5</jaxb-bom.version>
-        <hibernate-validator.version>8.0.2.Final</hibernate-validator.version>
-        <hibernate.version>6.6.20.Final</hibernate.version>
+        <hibernate-validator.version>9.0.1.Final</hibernate-validator.version>
+        <hibernate.version>7.1.0.Final</hibernate.version>
 
         <!-- Annet for WebApps -->
         <jandex-maven-plugin.version>3.4.0</jandex-maven-plugin.version>
@@ -84,19 +84,13 @@
                 <type>pom</type>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.jetty.ee10</groupId>
-                <artifactId>jetty-ee10-bom</artifactId>
+                <groupId>org.eclipse.jetty.ee11</groupId>
+                <artifactId>jetty-ee11-bom</artifactId>
                 <version>${jetty.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
 
-            <!-- TODO: Fjerne ved upgrade til EE11 da er den med i pakken -->
-            <dependency>
-                <groupId>jakarta.enterprise</groupId>
-                <artifactId>jakarta.enterprise.cdi-api</artifactId>
-                <version>4.0.1</version>
-            </dependency>
             <!-- WELD BOM -->
             <dependency>
                 <groupId>org.jboss.weld</groupId>
