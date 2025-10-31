@@ -4,13 +4,27 @@ on:
     types: [ published ]
 
 jobs:
-  release:
-    name: Kontrakt
+  release-bom:
+    name: Release BOM
     permissions:
       contents: read
       packages: write
     uses: navikt/fp-gha-workflows/.github/workflows/release-feature.yml@main
     with:
       release-version: ${{ github.event.release.tag_name }}
+      mvn-projects: '-pl fp-bom -am'
+      release-profiles: '-Pdeploy'
+    secrets: inherit
+
+  release-parents:
+    name: Release Parents
+    needs: release-bom
+    permissions:
+      contents: read
+      packages: write
+    uses: navikt/fp-gha-workflows/.github/workflows/release-feature.yml@main
+    with:
+      release-version: ${{ github.event.release.tag_name }}
+      mvn-projects: '-pl fp-parent-app,fp-parent-lib -am'
       release-profiles: ''
     secrets: inherit
