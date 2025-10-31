@@ -12,7 +12,7 @@ jobs:
     uses: navikt/fp-gha-workflows/.github/workflows/release-feature.yml@main
     with:
       release-version: ${{ github.event.release.tag_name }}
-      mvn-projects: '-pl fp-bom -am'
+      mvn-projects: '-pl fp-bom'
       release-profiles: '-Pdeploy'
     secrets: inherit
 
