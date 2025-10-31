@@ -98,6 +98,15 @@
                 <type>pom</type>
             </dependency>
 
+            <!-- Jackson 3 BOM -->
+            <dependency>
+                <groupId>tools.jackson</groupId>
+                <artifactId>jackson-bom</artifactId>
+                <version>3.0.1</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+
             <!-- JAXB BOM-->
             <dependency>
                 <groupId>org.glassfish.jaxb</groupId>
