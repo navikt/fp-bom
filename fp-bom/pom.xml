@@ -23,7 +23,7 @@
         <jakarta.el.version>6.0.0</jakarta.el.version>
         <weld-core-bom.version>6.0.3.Final</weld-core-bom.version>
         <jaxb-bom.version>4.0.6</jaxb-bom.version>
-        <hibernate-validator.version>9.0.1.Final</hibernate-validator.version>
+        <hibernate-validator.version>9.1.0.Final</hibernate-validator.version>
         <hibernate.version>7.1.7.Final</hibernate.version>
 
         <!-- Logging versions -->
