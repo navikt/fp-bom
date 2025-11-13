@@ -29,7 +29,7 @@
         <!-- Build versions -->
         <jaxb2-maven-plugin.version>4.0.0</jaxb2-maven-plugin.version>
         <maven-compiler-plugin.version>3.14.1</maven-compiler-plugin.version>
-        <jandex-maven-plugin.version>3.5.1</jandex-maven-plugin.version>
+        <jandex-maven-plugin.version>3.5.2</jandex-maven-plugin.version>
     </properties>
 
     <modules>
