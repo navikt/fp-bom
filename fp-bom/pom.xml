@@ -32,7 +32,7 @@
         <logstash.version>8.1</logstash.version>
         <otel-instr-bom.version>2.21.0</otel-instr-bom.version>
 
-        <jandex.version>3.5.1</jandex.version>
+        <jandex.version>3.5.2</jandex.version>
 
         <swagger.version>2.2.40</swagger.version>
 
