@@ -34,7 +34,7 @@
 
         <jandex.version>3.5.2</jandex.version>
 
-        <swagger.version>2.2.40</swagger.version>
+        <swagger.version>2.2.41</swagger.version>
 
         <micrometer.version>1.16.0</micrometer.version>
 
