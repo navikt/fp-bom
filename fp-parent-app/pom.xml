@@ -13,6 +13,10 @@
     <packaging>pom</packaging>
     <name>Foreldrepenger :: Felles bygg og test for apper</name>
 
+    <properties>
+        <maven.deploy.skip>true</maven.deploy.skip>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
