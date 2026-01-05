@@ -38,8 +38,6 @@
 
         <micrometer.version>1.16.1</micrometer.version>
 
-        <kafka.version>4.1.1</kafka.version>
-
         <hikari.version>7.0.2</hikari.version>
         <flyway.version>11.19.1</flyway.version>
         <postgresql.version>42.7.8</postgresql.version>
@@ -145,7 +143,19 @@
             <dependency>
                 <groupId>org.apache.kafka</groupId>
                 <artifactId>kafka-clients</artifactId>
-                <version>${kafka.version}</version>
+                <version>4.1.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lz4</groupId>
+                <artifactId>lz4-java</artifactId>
+                <version>1.8.1</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>at.yawk.lz4</groupId>
+                <artifactId>lz4-java</artifactId>
+                <version>1.10.2</version>
+                <scope>runtime</scope>
             </dependency>
 
             <!-- Validation -->
