@@ -27,7 +27,7 @@
         <mockito.version>5.21.0</mockito.version>
 
         <!-- Build versions -->
-        <jaxb2-maven-plugin.version>4.0.0</jaxb2-maven-plugin.version>
+        <jaxb2-maven-plugin.version>4.1.0</jaxb2-maven-plugin.version>
         <maven-compiler-plugin.version>3.14.1</maven-compiler-plugin.version>
         <jandex-maven-plugin.version>3.5.3</jandex-maven-plugin.version>
     </properties>
