@@ -27,7 +27,7 @@
         <hibernate.version>7.2.3.Final</hibernate.version>
 
         <!-- Logging versions -->
-        <logback.version>1.5.26</logback.version>
+        <logback.version>1.5.28</logback.version>
         <slf4j.version>2.0.17</slf4j.version>
         <logstash.version>8.1</logstash.version>
         <otel-instr-bom.version>2.24.0</otel-instr-bom.version>
