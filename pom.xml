@@ -52,6 +52,13 @@
         </repository>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>github</id> <!-- OBS: Koblet til settings.xml lokalt og github action -->
+            <url>https://maven.pkg.github.com/navikt/fp-bom</url>
+        </repository>
+    </repositories>
+
     <dependencyManagement>
         <dependencies>
             <!-- Test -->
