@@ -24,14 +24,16 @@ applications and libraries.
 - All version pins live here. Downstream repos must not override versions.
 - Dependabot drives upgrades in this repo first; consumers pick them up on
   next bump.
-- Jakarta EE 11 baseline: Jetty, Jersey (server only), Weld CDI, Hibernate,
-  Jackson (migrating 2 → 3), Kafka 4.
-- Java 25.
+- Jakarta EE 11 baseline: Jetty, Jersey (server only), Weld CDI, Hibernate
+- Other: Jackson 2 (moving to Jackson 3), Kafka 4, flyway, Hikari, Database drivers.
+- Logging and Observability: SLF4J + logback and bridges, Prometheus + Micrometer, OpenTelemetry.
+- Test: JUnit 5, AssertJ, Mockito, Testcontainers.
+- Build: dependencies and common build-steps used downstream (e.g. release plugin)
+- Java 25+.
 
 Not in fp-bom:
 - JMS / IBM MQ — see `fp-jms-integrasjon`
-- token-support — only used by unicorns (`fp-infotrygd`, `fp-ws-proxy`)
-- No Spring Boot, no Ehcache
+- No Spring Boot or dependents like token-support
 
 ## When changing
 
