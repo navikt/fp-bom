@@ -20,7 +20,6 @@ jobs:
     permissions:
       contents: read
     uses: navikt/fp-gha-workflows/.github/workflows/build-feature.yml@main
-    secrets: inherit
 
   release-drafter:
     name: Update
@@ -30,4 +29,3 @@ jobs:
     if: github.ref_name == 'master'
     needs: build
     uses: navikt/fp-gha-workflows/.github/workflows/release-drafter.yml@main
-    secrets: inherit
