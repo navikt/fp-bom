@@ -14,7 +14,6 @@ jobs:
       release-version: ${{ github.event.release.tag_name }}
       mvn-projects: '-pl fp-bom'
       release-profiles: '-Pdeploy'
-    secrets: inherit
 
   release-parents:
     name: Release Parents
@@ -27,4 +26,3 @@ jobs:
       release-version: ${{ github.event.release.tag_name }}
       mvn-projects: '-pl fp-parent-app,fp-parent-lib -am'
       release-profiles: ''
-    secrets: inherit
