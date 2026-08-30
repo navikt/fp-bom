@@ -37,7 +37,7 @@
 
         <swagger.version>2.2.54</swagger.version>
 
-        <micrometer.version>1.17.0</micrometer.version>
+        <micrometer.version>1.17.1</micrometer.version>
 
         <hikari.version>7.1.0</hikari.version>
         <flyway.version>13.3.0</flyway.version>
