@@ -30,7 +30,7 @@
         <logback.version>1.6.3</logback.version>
         <slf4j.version>2.0.18</slf4j.version>
         <logstash.version>9.0</logstash.version>
-        <otel-instr-bom.version>2.31.0</otel-instr-bom.version>
+        <otel-instr-bom.version>2.31.1</otel-instr-bom.version>
 
 
         <jandex.version>3.6.0</jandex.version>
