@@ -16,12 +16,14 @@
     <properties>
         <!-- Jakarta EE specifications -->
         <jakarta.jakartaee-bom.version>11.0.0</jakarta.jakartaee-bom.version>
+        <!-- New CDI for EE 12 - remove when upgrading to EE 12 above -->
+        <jakarta.cdi.version>5.0.0</jakarta.cdi.version>
 
         <!-- Jakarta EE implementations -->
         <jetty.version>12.1.13</jetty.version>
         <jersey.version>4.0.0</jersey.version>
         <jakarta.el.version>6.0.0</jakarta.el.version>
-        <weld-core-bom.version>6.0.4.Final</weld-core-bom.version>
+        <weld-core-bom.version>7.0.0.Final</weld-core-bom.version>
         <jaxb-bom.version>4.0.9</jaxb-bom.version>
         <hibernate-validator.version>9.1.4.Final</hibernate-validator.version>
         <hibernate.version>7.4.11.Final</hibernate.version>
@@ -47,6 +49,38 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- New CDI for EE 12 - remove when upgrading to EE 12 and Jersey 5 -->
+            <dependency>
+                <groupId>jakarta.cdi</groupId>
+                <artifactId>jakarta.cdi-api</artifactId>
+                <version>${jakarta.cdi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.cdi</groupId>
+                <artifactId>jakarta.cdi-lang-model-api</artifactId>
+                <version>${jakarta.cdi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.cdi</groupId>
+                <artifactId>jakarta.cdi-el-api</artifactId>
+                <version>${jakarta.cdi.version}</version>
+            </dependency>
+            <!-- Relocate legacy transitive dependencies instead of retaining CDI 4 API jars. Remove when upgrading to EE 12 and Jersey 5  -->
+            <dependency>
+                <groupId>jakarta.enterprise</groupId>
+                <artifactId>jakarta.enterprise.cdi-api</artifactId>
+                <version>${jakarta.cdi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.enterprise</groupId>
+                <artifactId>jakarta.enterprise.lang-model</artifactId>
+                <version>${jakarta.cdi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.enterprise</groupId>
+                <artifactId>jakarta.enterprise.cdi-el-api</artifactId>
+                <version>${jakarta.cdi.version}</version>
+            </dependency>
             <!-- Jakarta EE API BOM -->
             <dependency>
                 <groupId>jakarta.platform</groupId>
