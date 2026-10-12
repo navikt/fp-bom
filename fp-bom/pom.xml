@@ -49,7 +49,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- New CDI for EE 12 - remove when upgrading to EE 12 and Jersey 5 -->
+            <!-- New CDI for EE 12 - TODO: remove when upgrading to EE 12 and Jersey 5 -->
             <dependency>
                 <groupId>jakarta.cdi</groupId>
                 <artifactId>jakarta.cdi-api</artifactId>
@@ -65,7 +65,7 @@
                 <artifactId>jakarta.cdi-el-api</artifactId>
                 <version>${jakarta.cdi.version}</version>
             </dependency>
-            <!-- Relocate legacy transitive dependencies instead of retaining CDI 4 API jars. Remove when upgrading to EE 12 and Jersey 5  -->
+            <!-- Relocate legacy transitive dependencies instead of retaining CDI 4 API jars. TODO: Remove when upgrading to EE 12 and Jersey 5  -->
             <dependency>
                 <groupId>jakarta.enterprise</groupId>
                 <artifactId>jakarta.enterprise.cdi-api</artifactId>

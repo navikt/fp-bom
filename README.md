@@ -8,7 +8,7 @@ Platform - [Jakarta EE 11](https://jakarta.ee/specifications/platform/11/)
 
 Jakarta EE 12: Plattformen Weld 7 / CDI 5 med Maven-koordinatene `jakarta.cdi:*`. BOM-en
 styrer også de gamle `jakarta.enterprise:*`-koordinatene til 5.0.0-relokeringene
-for å unngå doble CDI API-er fra transitive avhengigheter.
+for å unngå doble CDI API-er fra transitive avhengigheter. Dette er midlertidig.
 
 ### Jakarta API implementasjoner brukt
 
