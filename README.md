@@ -4,7 +4,11 @@ Inneholder en felles Bill of Material (BOM) som brukes av alle biblioteker/appli
 
 ## Teknologi oversikt
 
-Platform - [Jakarta EE 10](https://projects.eclipse.org/releases/jakarta-10)
+Platform - [Jakarta EE 11](https://jakarta.ee/specifications/platform/11/)
+
+Jakarta EE 12: Plattformen Weld 7 / CDI 5 med Maven-koordinatene `jakarta.cdi:*`. BOM-en
+styrer også de gamle `jakarta.enterprise:*`-koordinatene til 5.0.0-relokeringene
+for å unngå doble CDI API-er fra transitive avhengigheter.
 
 ### Jakarta API implementasjoner brukt
 
