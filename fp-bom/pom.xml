@@ -37,7 +37,7 @@
 
         <jandex.version>3.6.0</jandex.version>
 
-        <swagger.version>2.2.55</swagger.version>
+        <swagger.version>3.0.0</swagger.version>
 
         <micrometer.version>1.17.2</micrometer.version>
 
@@ -120,15 +120,6 @@
                 <groupId>io.smallrye</groupId>
                 <artifactId>jandex</artifactId>
                 <version>${jandex.version}</version>
-            </dependency>
-
-            <!-- Jackson BOM -->
-            <dependency>
-                <groupId>com.fasterxml.jackson</groupId>
-                <artifactId>jackson-bom</artifactId>
-                <version>2.22.4</version>
-                <scope>import</scope>
-                <type>pom</type>
             </dependency>
 
             <!-- Jackson 3 BOM -->
@@ -321,17 +312,17 @@
             <!-- Swagger starter-->
             <dependency>
                 <groupId>io.swagger.core.v3</groupId>
-                <artifactId>swagger-jaxrs2-jakarta</artifactId>
+                <artifactId>swagger-rest</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.swagger.core.v3</groupId>
-                <artifactId>swagger-annotations-jakarta</artifactId>
+                <artifactId>swagger-annotations</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.swagger.core.v3</groupId>
-                <artifactId>swagger-core-jakarta</artifactId>
+                <artifactId>swagger-core</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
 
