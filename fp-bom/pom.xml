@@ -26,7 +26,7 @@
         <weld-core-bom.version>7.0.0.Final</weld-core-bom.version>
         <jaxb-bom.version>4.0.9</jaxb-bom.version>
         <hibernate-validator.version>9.1.6.Final</hibernate-validator.version>
-        <hibernate.version>7.4.14.Final</hibernate.version>
+        <hibernate.version>7.4.15.Final</hibernate.version>
 
         <!-- Logging versions -->
         <logback.version>1.6.6</logback.version>
