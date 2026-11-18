@@ -35,7 +35,7 @@
         <otel-instr-bom.version>2.33.1</otel-instr-bom.version>
 
 
-        <jandex.version>3.6.0</jandex.version>
+        <jandex.version>3.6.1</jandex.version>
 
         <swagger.version>3.0.0</swagger.version>
 
